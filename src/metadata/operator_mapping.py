@@ -93,7 +93,7 @@ OPERATOR_MAP = {
     "Z19": "Non-NATO"
 }
 
-def get_operator(class_id: int, class_names: list[str]) -> str:
+def get_operator(class_id, class_names):
     """Return operator group (NATO / Non-NATO / Both) for a given class ID."""
     name = class_names[class_id]
     return OPERATOR_MAP.get(name, "Unknown")
