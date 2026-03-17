@@ -9,3 +9,4 @@ CLASS_NAMES = [
     "J10",
     "Rafale",
     "TB2"
+]
