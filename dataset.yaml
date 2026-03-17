@@ -1,95 +1,17 @@
-train: data/train/images
-val: data/val/images
-test: data/test/images
+train: data_clean/train/images
+val: data_clean/val/images
+test: data_clean/test/images
 
-nc: 88
+nc: 10
 
 names:
-  0: A10
-  1: A400M
-  2: AG600
-  3: AH64
-  4: AKINCI
-  5: AV8B
-  6: An124
-  7: An22
-  8: An225
-  9: An72
-  10: B1
-  11: B2
-  12: B52
-  13: Be200
-  14: C1
-  15: C130
-  16: C17
-  17: C2
-  18: C390
-  19: C5
-  20: CH47
-  21: CH53
-  22: CL415
-  23: E2
-  24: E7
-  25: EF2000
-  26: EMB314
-  27: F117
-  28: F14
-  29: F15
-  30: F16
-  31: F18
-  32: F2
-  33: F22
-  34: F35
-  35: F4
-  36: FCK1
-  37: H6
-  38: Il76
-  39: J10
-  40: J20
-  41: J35
-  42: J36
-  43: JAS39
-  44: JF17
-  45: JH7
-  46: KAAN
-  47: KC135
-  48: KF21
-  49: KJ600
-  50: Ka27
-  51: Ka52
-  52: MQ9
-  53: Mi24
-  54: Mi26
-  55: Mi28
-  56: Mi8
-  57: Mig29
-  58: Mig31
-  59: Mirage2000
-  60: P3
-  61: RQ4
-  62: Rafale
-  63: SR71
-  64: Su24
-  65: Su25
-  66: Su34
-  67: Su47
-  68: Su57
-  69: TB001
-  70: TB2
-  71: Tejas
-  72: Tornado
-  73: Tu160
-  74: Tu22M
-  75: Tu95
-  76: U2
-  77: UH60
-  78: US2
-  79: V22
-  80: Vulcan
-  81: WZ7
-  82: X32
-  83: XB70
-  84: Y20
-  85: YF23
-  86: Z10
-  87: Z19
+  0: C130
+  1: EF2000
+  2: EMB314
+  3: F15
+  4: F16
+  5: F18
+  6: F35
+  7: J10
+  8: Rafale
+  9: TB2
