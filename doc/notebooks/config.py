@@ -1,28 +1,35 @@
 CONFIG = {
-    "model": "yolo11m.pt",           
-    "data": "../../dataset.yaml",
-    "imgsz": 640,
-
-    # Hyperparameters             
-    "epochs": 150,                   
-    "batch": -1, # Auto-batch, maximizes GPU memory utilization
-    "patience": 30,
-    "device": 0,                
+    # Model and data
+    "model": "yolo11l.pt",           
+    "data": "/kaggle/working/aircraft-detection-and-classification/dataset.yaml",
+    "imgsz": 640,         
+    
+    # Training settings
+    "epochs": 150,        
+    "batch": -1,          
+    "patience": 30,        
+    "device": 0,       
+    
+    # Optimizer
     "optimizer": "AdamW",            
-    "lr0": 0.001,                     
-    "lrf": 0.01,                                       
-    "weight_decay": 0.0005, 
-    "warmup_epochs": 5.0,   
+    "lr0": 0.0007,              
+    "lrf": 0.1,                   
+    "weight_decay": 0.0007,          
+    "warmup_epochs": 3.0,
 
-    "mosaic": 1.0,
-    "mixup": 0.1,
-    "copy_paste": 0.1,
-    "hsv_h": 0.015,
-    "degrees": 10.0,
-
+    "cls": 1.5,
+    
+    # Augmentation
+    "mosaic": 1.0,                 
+    "mixup": 0.05,                   
+    "copy_paste": 0.1,              
+    "hsv_h": 0.015,                
+    "degrees": 10.0,            
+    
+    # Logging and saving
     "project": "runs/train",
-    "name": "aircraft_yolo11m_v3_optimized",
+    "name": "aircraft_yolo11l_v4_optimized",
     "exist_ok": True,
-    "plots": True,
-    "save_period": 5               
+    "plots": True,              
+    "save_period": 5         
 }
