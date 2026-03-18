@@ -14,7 +14,7 @@ CONFIG = {
     "weight_decay": 0.0005,          
     "device": 0,                     
     "project": "runs/train",
-    "name": "aircraft_yolo11m_v1",
+    "name": "aircraft_yolo11m_v2",
     "exist_ok": True,
     "plots": True,                  
     "mosaic": 0.0                
