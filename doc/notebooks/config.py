@@ -1,7 +1,7 @@
 CONFIG = {
     "model": "yolo11m.pt",           
     "data": "../../dataset.yaml",
-    "imgsz": 320,
+    "imgsz": 640,
 
     # Hyperparameters             
     "epochs": 100,                   
