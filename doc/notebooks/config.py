@@ -1,12 +1,12 @@
 CONFIG = {
     # Model and data
-    "model": "yolo11l.pt",           
+    "model": "yolo11x.pt",           
     "data": "/kaggle/working/aircraft-detection-and-classification/dataset.yaml",
     "imgsz": 640,         
     
     # Training settings
     "epochs": 150,        
-    "batch": -1,          
+    "batch": 8,          
     "patience": 30,        
     "device": 0,       
     
@@ -28,7 +28,7 @@ CONFIG = {
     
     # Logging and saving
     "project": "runs/train",
-    "name": "aircraft_yolo11l_v4_optimized",
+    "name": "aircraft_yolo11l_v5_optimized",
     "exist_ok": True,
     "plots": True,              
     "save_period": 5         
