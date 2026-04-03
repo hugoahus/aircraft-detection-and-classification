@@ -5,7 +5,7 @@ CONFIG = {
     "imgsz": 640,         
 
     # Training settings
-    "epochs": 200,        
+    "epochs": 230,        
     "batch": -1,
     "patience": 30,        
     "device": 0,       
@@ -29,7 +29,7 @@ CONFIG = {
 
     # Logging and saving
     "project": "runs/train",
-    "name": "aircraft_yolo11l_v7_optimized",
+    "name": "aircraft_yolo11l_v8_optimized",
     "exist_ok": True,
     "plots": True,              
     "save_period": 5         
