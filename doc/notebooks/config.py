@@ -5,7 +5,7 @@ CONFIG = {
     "imgsz": 640,         
 
     # Training settings
-    "epochs": 150,        
+    "epochs": 200,        
     "batch": -1,
     "patience": 30,        
     "device": 0,       
@@ -13,23 +13,23 @@ CONFIG = {
     # Optimizer
     "optimizer": "AdamW",            
     "lr0": 0.0007,              
-    "lrf": 0.1,                   
-    "weight_decay": 0.0007,          
+    "lrf": 0.01,                   
+    "weight_decay": 0.001,          
     "warmup_epochs": 3.0,
 
     "cls": 1.5,
-    "close_mosaic": 20,
+    "close_mosaic": 30,
 
     # Augmentation
     "mosaic": 1.0,                 
-    "mixup": 0.05,                   
+    "mixup": 0.1,                   
     "copy_paste": 0.1,              
     "hsv_h": 0.015,                
     "degrees": 10.0,            
 
     # Logging and saving
     "project": "runs/train",
-    "name": "aircraft_yolo11l_v6_optimized",
+    "name": "aircraft_yolo11l_v7_optimized",
     "exist_ok": True,
     "plots": True,              
     "save_period": 5         
